@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f22a7f0a-9518-42a6-bcd6-3201baa21b29" name="Crossflash 2021">
+        <fileTransfer accessType="SFTP" host="2021.crossflash.de" port="22" sshConfigId="c684bcf9-c648-466d-9174-32c262d3a47b" sshConfig="2021 Crossflash" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
