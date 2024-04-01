@@ -112,6 +112,7 @@ if( isset($media_option_post_id) && $media_option_post_id != 0 ) {
 <div class="navbar navbar-default<?php if( !isset($media_option_post_id) || $media_option_post_id == 0 ) { ?> fixed<?php } ?><?php if ( !empty($theme_pc['disable_logo']) ) { ?> no-logo<?php } ?>">
 	<div class="container">
 		<div class="navbar-header">
+            <span class="nav-title">Burkhart & Nicole</span>
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 			<?php if ( empty($theme_pc['disable_logo']) ) { ?>
 				<?php if ( has_custom_logo() ) {
