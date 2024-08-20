@@ -13,7 +13,7 @@
     <input id="guessText" onKeyUp="resetGuessResult() "/>
     <div id="guessCorrect">
         <p>Das ist korrekt! Gratulation.</p>
-        <p><strong>Genieß die Party an Tisch 23.</strong></p>
+        <p><strong>Genieß die Party an, um oder auf Tisch 23.</strong></p>
     </div>
     <p id="guessWrong">Das ist leider noch nicht korrekt. Checke noch mal den Hinweis und rechne nach.</p>
     <input type="button" value="OK" onclick="checkSolution(23)" />

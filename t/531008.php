@@ -48,14 +48,16 @@
     </tr>
     <tr>
         <td style="text-align: center;" width="50%">
-            Jörn<br />
-            Martina<br />
-            Bianca<br />
-            Tina
+            Dominik<br />
+            Daniel<br />
+            Thorsten & Kathrin<br />
+            Johanna
+
         <td style="text-align: center;" width="50%">
-            Silke<br />
-            Janina & Sven<br />
-            Janine & Timo
+            Chris & Franzi<br />
+            Annemarie<br />
+            Ina & Markus<br />
+            Katja & Christian
         </td>
         </td>
     </tr>
