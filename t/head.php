@@ -246,7 +246,7 @@ a{
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #f5f4ec;
+            background-color: #EEEEEE;
             opacity: 0.7;
             display: none;
         }
@@ -257,8 +257,8 @@ a{
             width: 300px;
             height: 300px;
             left: 50%;
-            background-color: #eee;
-            border: 1px solid black;
+            background-color: #f5f4ec;
+            border: 2px solid #811818;
             margin-left: -150px;
             top: 216px;
             text-align: center;
@@ -277,7 +277,6 @@ a{
             width: 40px;
             bottom: 10px;
             left: 130px;
-            /*right: 10px;*/
         }
 
         #guessText {
