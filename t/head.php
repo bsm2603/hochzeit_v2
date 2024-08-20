@@ -202,19 +202,171 @@ a{
             margin: 2px;       
             cursor: pointer;
         }		</style>
-		<style type="text/css" title="dynamic-css" class="options-output">h1,h2{font-family:Italianno;font-weight:400;font-style:normal;}h3, h4, h5, h6, .btn{font-family:PT Serif;font-weight:400;font-style:normal;}body{font-family:PT Serif;font-weight:400;font-style:normal;}.navbar-default, .btn-primary, .fact-item.img-circle, .hover-effect span, #rsvp, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{background-color:#811818;}a, h6, .heading i, .countdown-period, .social-icons a:hover, .post-header span{color:#811818;}.heading span, .social-icons a:hover{border-color:#811818;}.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .btn-primary:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background-color:#c45331;}a:hover{color:#c45331;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
-</head><body data-spy="scroll" data-target=".navbar-collapse" class="page-template-default page page-id-295 inner wpb-js-composer js-comp-ver-6.7.0 vc_responsive">
+    <style type="text/css" title="dynamic-css" class="options-output">h1, h2 {
+            font-family: Italianno;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h3, h4, h5, h6, .btn {
+            font-family: PT Serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            font-family: PT Serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .navbar-default, .btn-primary, .fact-item.img-circle, .hover-effect span, #rsvp, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+            background-color: #811818;
+        }
+
+        a, h6, .heading i, .countdown-period, .social-icons a:hover, .post-header span {
+            color: #811818;
+        }
+
+        .heading span, .social-icons a:hover {
+            border-color: #811818;
+        }
+
+        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .btn-primary:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+            background-color: #c45331;
+        }
+
+        a:hover {
+            color: #c45331;
+        }
+
+        .popupcover {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f5f4ec;
+            opacity: 0.7;
+            display: none;
+        }
+
+        .popup {
+            position: absolute;
+            z-index: 100;
+            width: 300px;
+            height: 300px;
+            left: 50%;
+            background-color: #eee;
+            border: 1px solid black;
+            margin-left: -150px;
+            top: 216px;
+            text-align: center;
+            opacity: 1;
+            display: none;
+            padding: 15px;
+        }
+
+        .popup h2 {
+            font-size: 2em;
+            margin: 0.5em;
+        }
+
+        .popup input[type="button"] {
+            position: absolute;
+            width: 40px;
+            bottom: 10px;
+            left: 130px;
+            /*right: 10px;*/
+        }
+
+        #guessText {
+            width: 80px;
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        #guessCorrect, #guessWrong {
+            display: none;
+        }
+
+    </style>
+    <noscript>
+        <style> .wpb_animate_when_almost_visible {
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+    <script type="text/javascript">
+        function togglePopup(name, status) {
+            document.getElementById('popupcover').style.display=status;
+            document.getElementById(name).style.display=status;
+            document.getElementById('guessText').value = '';
+        }
+
+        function checkSolution(correctValue) {
+
+            let divCorrect = document.getElementById('guessCorrect');
+            let divWrong = document.getElementById('guessWrong');
+
+            if (divCorrect.style.display == 'block' | divWrong.style.display == 'block') {
+                togglePopup('guess', 'none');
+                resetGuessResult();
+                return;
+            }
+
+            let givenValue = document.getElementById('guessText').value.trim();
+            if (givenValue == correctValue) {
+                document.getElementById('guessCorrect').style.display = 'block';
+            } else {
+                document.getElementById('guessWrong').style.display = 'block';
+            }
+        }
+
+        function resetGuessResult() {
+            document.getElementById('guessCorrect').style.display = 'none';
+            document.getElementById('guessWrong').style.display = 'none';
+        }
+
+        function closeAll() {
+            togglePopup('hint', 'none');
+            togglePopup('tell', 'none');
+            togglePopup('guess', 'none');
+        }
+    </script>
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse"
+      class="page-template-default page page-id-295 inner wpb-js-composer js-comp-ver-6.7.0 vc_responsive">
 <div class="navbar navbar-default fixed no-logo">
-	<div class="container">
-		<div class="navbar-header">
+    <div class="container">
+        <div class="navbar-header">
             <span class="nav-title">Burkhart & Nicole</span>
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-					</div><div class="navbar-collapse collapse"><ul id="menu-burkhart-nicole" class="nav navbar-nav navbar-right"><li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a title="Einladung" href="https://hochzeit.salzmannonline.de/#section-2">Einladung</a></li>
-<li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a title="Über uns" href="https://hochzeit.salzmannonline.de/#section-168">Über uns</a></li>
-<li id="menu-item-201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-201"><a title="Keine Fesseln – Nur Flügel" href="https://hochzeit.salzmannonline.de/#section-14">Keine Fesseln – Nur Flügel</a></li>
-<li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"><a title="Zeit und Ort" href="https://hochzeit.salzmannonline.de/#section-16">Zeit und Ort</a></li>
-<li id="menu-item-202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a title="Unterkunft" href="https://hochzeit.salzmannonline.de/#section-99">Unterkunft</a></li>
-<li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a title="Seid kreativ!" href="https://hochzeit.salzmannonline.de/#section-103">Seid kreativ!</a></li>
-<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a title="Rückmeldung &#8211; UAWG*" href="https://hochzeit.salzmannonline.de/#section-121">Rückmeldung &#8211; UAWG*</a></li>
-</ul></div>	</div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
+                        class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul id="menu-burkhart-nicole" class="nav navbar-nav navbar-right">
+                <li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a
+                            title="Einladung" href="https://hochzeit.salzmannonline.de/#section-2">Einladung</a></li>
+                <li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a
+                            title="Über uns" href="https://hochzeit.salzmannonline.de/#section-168">Über uns</a></li>
+                <li id="menu-item-201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-201"><a
+                            title="Keine Fesseln – Nur Flügel" href="https://hochzeit.salzmannonline.de/#section-14">Keine
+                        Fesseln – Nur Flügel</a></li>
+                <li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"><a
+                            title="Zeit und Ort" href="https://hochzeit.salzmannonline.de/#section-16">Zeit und Ort</a>
+                </li>
+                <li id="menu-item-202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a
+                            title="Unterkunft" href="https://hochzeit.salzmannonline.de/#section-99">Unterkunft</a></li>
+                <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a
+                            title="Seid kreativ!" href="https://hochzeit.salzmannonline.de/#section-103">Seid
+                        kreativ!</a></li>
+                <li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a
+                            title="Rückmeldung &#8211; UAWG*" href="https://hochzeit.salzmannonline.de/#section-121">Rückmeldung
+                        &#8211; UAWG*</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
