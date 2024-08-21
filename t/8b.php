@@ -3,7 +3,7 @@
 <div class="popupcover" id="popupcover" onClick="closeAll()"></div>
 <div class="popup" id="hint">
     <h2>Hinweis</h2>
-    <p>Das Ergebnis ist eine Potenz von 2. Außerdem: 60% aller Anwesenden sind Eltern der Freunde der Kinder. Eigentlich kann man fast jeden fragen.</p>
+    <p>Das Ergebnis ist eine Potenz von 2. 60% aller Anwesenden sind Eltern der Freunde der Kinder. Eigentlich kann man fast jeden fragen.</p>
     <input type="button" value="OK" onclick="togglePopup('hint', 'none')" />
 </div>
 

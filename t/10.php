@@ -3,7 +3,7 @@
 <div class="popupcover" id="popupcover" onClick="closeAll()"></div>
 <div class="popup" id="hint">
     <h2>Hinweis</h2>
-    <p>Islandpferde sind dafür bekannt, dass sie den Tölt beherrschen. Nicht vergessen zur richtigen Lösung noch 6 zu addieren.</p>
+    <p>Islandpferde sind dafür bekannt, dass sie den Tölt beherrschen. Nicht vergessen, zur richtigen Lösung noch 6 zu addieren.</p>
     <input type="button" value="OK" onclick="togglePopup('hint', 'none')" />
 </div>
 
