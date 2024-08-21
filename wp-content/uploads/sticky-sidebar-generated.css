@@ -1,0 +1,44 @@
+#easy-sticky-sidebar-1.easy-sticky-sidebar {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){#easy-sticky-sidebar-1.easy-sticky-sidebar {
+}
+
+}@media screen and (max-width: 767px){#easy-sticky-sidebar-1.easy-sticky-sidebar {
+}
+
+}#easy-sticky-sidebar-1.easy-sticky-sidebar .sticky-sidebar-button {
+	color: #fff;
+	font-family: 'Open Sans';
+	font-size: 20px;
+	text-align: left;
+	background-color: #811818;
+}
+
+#easy-sticky-sidebar-1.easy-sticky-sidebar .sticky-sidebar-image {
+	background-image: url(https://hochzeit.salzmannonline.de/wp-content/uploads/2024/03/20230831_HZ_NB_199-scaled.jpg);
+}
+
+#easy-sticky-sidebar-1.easy-sticky-sidebar .sticky-sidebar-text {
+	color: #fff;
+	font-family: 'Open Sans';
+	font-size: 25px;
+}
+
+#easy-sticky-sidebar-1.easy-sticky-sidebar .sticky-sidebar-content hr {
+	background-color: #fff;
+}
+
+#easy-sticky-sidebar-1.easy-sticky-sidebar .sticky-sidebar-call-to-action {
+	color: #fff;
+	font-family: 'Open Sans';
+	font-size: 19px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){.easy-sticky-sidebar.easy-sticky-sidebar-1 {
+}
+
+}@media screen and (max-width: 767px){.easy-sticky-sidebar.easy-sticky-sidebar-1 {
+}
+
+}
