@@ -52,7 +52,7 @@
         <td style="text-align: center;" width="50%">
             Silke<br />
             Janina & Sven<br />
-            Janine & Timo
+            Janine & Fabian
         </td>
     </tr>
     </tbody>
