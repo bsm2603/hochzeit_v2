@@ -1,16 +1,18 @@
 <?php require_once('./head.php'); ?>
-
+<script type="text/javascript">
+    let correctSolution = 15;
+</script>
 <div class="popupcover" id="popupcover" onClick="closeAll()"></div>
 <div class="popup" id="hint">
     <h2>Hinweis</h2>
     <p>Die gefragte Quersumme ist durch 5 teilbar. Bedenke auch, dass 2024 ein Schaltjahr ist.</p>
-    <input type="button" value="OK" onclick="togglePopup('hint', 'none')" />
+    <input type="button" value="OK" onclick="togglePopup('hint', 'none')"/>
 </div>
 
 <div class="popup" id="guess">
     <h2>Deine Lösung prüfen</h2>
     <p>Gib Deine Lösung ein</p>
-    <input id="guessText" onKeyUp="resetGuessResult() "/>
+    <input id="guessText" onKeyUp="checkEnter()" onFocus="this.select()"/>
     <div id="guessCorrect">
         <p>Das ist korrekt! Gratulation.</p>
         <p><strong>Genieß die Party an, um oder auf Tisch 15.</strong></p>
@@ -29,33 +31,13 @@
 <section id="page">
     <div class="container">
         <div class="heading" style="padding-bottom: 10px" data-scroll-reveal>
-            <h2>Tischrätsel Familie</h2>
+            <h2>Deine Tischnummer</h2>
             <p><span></span><i class="fa fa-question"></i><span></span></p>
         </div>
     </div>
 </section>
 
-<table style="margin:0px; max-width: 400px; margin: auto">
-    <tbody>
-    <tr>
-        <td colspan="2" style="text-align: center;">Ich zeige Dir Deinen Platz.</td>
-    </tr>
-    <tr>
-        <td colspan="2" style="text-align: center;">&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-align: center;" width="50%">Uwe<br/>
-            Amy & Jolie<br/>
-            Christopher
-        </td>
-        <td style="text-align: center;" width="50%">Nina<br/>
-            Silvia<br/>
-            Kevin & Ann-Kathrin
-        </td>
-    </tr>
-    </tbody>
-</table>
-<p style="margin-top: 20px; text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
+<p style="text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
     Seit wie vielen Tagen sind Nicole und Burkhart heute bereits standesamtlich verheiratet?<br/>Berechne von
     dieser Zahl die Quersumme (die Summe aller einzelnen Ziffern) und Du hast Deine Tischnummer.
 </p>

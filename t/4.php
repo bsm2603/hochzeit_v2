@@ -29,36 +29,14 @@
 <section id="page">
     <div class="container">
         <div class="heading" style="padding-bottom: 10px" data-scroll-reveal>
-            <h2>Tischrätsel Fußball-Muttis</h2>
+            <h2>Deine Tischnummer</h2>
             <p>(OK, nicht nur die Muttis)</p>
             <p><span></span><i class="fa fa-question"></i><span></span></p>
         </div>
     </div>
 </section>
 
-<table style="margin:0px; max-width: 400px; margin: auto">
-    <tbody>
-    <tr>
-        <td colspan="2" style="text-align: center;">Ich zeige Dir Deinen Platz.</td>
-    </tr>
-    <tr>
-        <td colspan="2" style="text-align: center;">&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-align: center;" width="50%">
-            Sabrina<br />
-            Manuel<br />
-            Wiebke
-        </td>
-        <td style="text-align: center;" width="50%">
-            Doreen<br />
-            Andreas<br />
-            Emma Sophie
-        </td>
-    </tr>
-    </tbody>
-</table>
-<p style="margin-top: 20px; text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
+<p style="text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
     Wie viele Personen sind während eines Bundesliga-Fußballspiels normalerweise auf dem Platz.<br />
     Das Ergebnis ist eine Primzahl und Eure Tischnummer.
 </p>

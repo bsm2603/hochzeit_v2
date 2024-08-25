@@ -29,40 +29,21 @@
 <section id="page">
     <div class="container">
         <div class="heading" style="padding-bottom: 10px" data-scroll-reveal>
-            <h2>Tischrätsel Kid & Teens (Mädchen)</h2>
+            <h2>Deine Tischnummer</h2>
             <p><span></span><i class="fa fa-question"></i><span></span></p>
         </div>
     </div>
 </section>
 
-<table style="margin:0px; max-width: 400px; margin: auto">
-    <tbody>
-    <tr>
-        <td colspan="2" style="text-align: center;">Ich zeige Dir Deinen Platz.</td>
-    </tr>
-    <tr>
-        <td colspan="2" style="text-align: center;">&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-align: center;" width="50%">
-            Mila<br />
-            Alina<br />
-            Merja
-        </td>
-        <td style="text-align: center;" width="50%">
-            Miriam<br />
-            Martha<br />
-            Frida
-        </td>
-    </tr>
-    </tbody>
-</table>
-<p style="margin-top: 20px; text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
-    Wie viele Gangarten kann ein Islandpferd? Rechne zum Ergebnis 6 hinzu.<br /><br />
+<p style="text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
+    Wie viele Gangarten hat ein Islandpferd?<br /><br />
     3: Schritt, Trab und Galopp<br />
     4: Schritt, Trab, Pass und Galopp<br />
     5: Schritt, Trab, Pass, Tölt und Galopp<br />
-    6: Schritt, Trab, Pass, Tölt, Galopp und Schleich
+    6: Schritt, Trab, Pass, Tölt, Galopp und Schleich<br /><br />
+    Rechne zur Antwort 6 hinzu.<br />
+    Das Ergebnis ist Deine Tischnummer.
+
 </p>
 <form class="knopf-container" style="text-align:center">
     <button type="button" onclick="togglePopup('hint', 'block')">Hinweis</button><br/>

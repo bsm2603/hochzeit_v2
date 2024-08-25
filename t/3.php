@@ -29,35 +29,13 @@
 <section id="page">
     <div class="container">
         <div class="heading" style="padding-bottom: 10px" data-scroll-reveal>
-            <h2>Tischrätsel Team Hondelage</h2>
+            <h2>Deine Tischnummer</h2>
             <p><span></span><i class="fa fa-question"></i><span></span></p>
         </div>
     </div>
 </section>
 
-<table style="margin:0px; max-width: 400px; margin: auto">
-    <tbody>
-    <tr>
-        <td colspan="2" style="text-align: center;">Ich zeige Dir Deinen Platz.</td>
-    </tr>
-    <tr>
-        <td colspan="2" style="text-align: center;">&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-align: center;" width="50%">
-            Katrin & Feitse<br />
-            Greta<br />
-            Lina
-        </td>
-        <td style="text-align: center;" width="50%">
-            Verena<br />
-            Sarah<br />
-            Michael
-        </td>
-    </tr>
-    </tbody>
-</table>
-<p style="margin-top: 20px; text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
+<p style="text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
     Ihr seid alle aus drei Hondelager Haushalten.<br />
     Addiert Eure Hausnummern.<br />
     Das Ergebnis ist Eure Tischnummer.

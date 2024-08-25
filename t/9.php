@@ -29,39 +29,13 @@
 <section id="page">
     <div class="container">
         <div class="heading" style="padding-bottom: 10px" data-scroll-reveal>
-            <h2>Tischrätsel Kid & Teens (Jungs)</h2>
+            <h2>Deine Tischnummer</h2>
             <p><span></span><i class="fa fa-question"></i><span></span></p>
         </div>
     </div>
 </section>
 
-<table style="margin:0px; max-width: 400px; margin: auto">
-    <tbody>
-    <tr>
-        <td colspan="2" style="text-align: center;">Ich zeige Dir Deinen Platz.</td>
-    </tr>
-    <tr>
-        <td colspan="2" style="text-align: center;">&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-align: center;" width="50%">
-            Collin<br />
-            Milo<br />
-            Emil<br />
-            Levi<br />
-            Mattis
-        </td>
-        <td style="text-align: center;" width="50%">
-            Hendrik<br />
-            Felix<br />
-            Tyler<br />
-            Julian<br />
-            Marin
-        </td>
-    </tr>
-    </tbody>
-</table>
-<p style="margin-top: 20px; text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
+<p style="text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
     Du startest beim Pfeil in der Mitte des Labyrinths.<br />Es gelingt Dir, erfolgreich zu fliehen. Bei welcher Zahl kommst raus?<br />
     <img src="labyrinth.jpg" width="300px" />
 </p>

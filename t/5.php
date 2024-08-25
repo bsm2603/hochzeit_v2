@@ -32,40 +32,15 @@
 <section id="page">
     <div class="container">
         <div class="heading" style="padding-bottom: 10px" data-scroll-reveal>
-            <h2>Tischrätsel Freunde</h2>
+            <h2>Deine Tischnummer</h2>
             <p><span></span><i class="fa fa-question"></i><span></span></p>
         </div>
     </div>
 </section>
 
-<table style="margin:0px; max-width: 400px; margin: auto">
-    <tbody>
-    <tr>
-        <td colspan="2" style="text-align: center;">Ich zeige Dir Deinen Platz.</td>
-    </tr>
-    <tr>
-        <td colspan="2" style="text-align: center;">&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-align: center;" width="50%">
-            Dominik<br />
-            Daniel<br />
-            Thorsten & Kathrin<br />
-            Johanna
-
-        <td style="text-align: center;" width="50%">
-            Chris & Franzi<br />
-            Annemarie<br />
-            Ina & Markus<br />
-            Katja & Christian
-        </td>
-        </td>
-    </tr>
-    </tbody>
-</table>
-<p style="margin: 20px 30% 0 30%; text-align:center;"><strong>So findest Du Deine Tischnummer:</strong><br/>
+<p style="text-align:center;"><strong>So findest Du Deine Tischnummer:</strong><br/>
     Wieviele Punkte bekommt der Spieler, der gerade dieses Wort gelegt hat?<br />
-    <img src="./buchspinat-scrabble-400.jpg" alt="Buchspinat" style="margin: 10px"/><br />
+    <img src="./buchspinat-scrabble-400.jpg" alt="Buchspinat" style="margin: 10px; width: 90%"/><br />
     (Ein sehr aufmerksamer Scrabble-Spieler wird anmerken, dass man dieses Wort nicht auf
     einmal legen kann, da man immer nur 8 Buchstaben zur Verfügung hat.
     Zähle hier und heute trotzdem alles Bonusfelder.)

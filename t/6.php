@@ -29,35 +29,13 @@
 <section id="page">
     <div class="container">
         <div class="heading" style="padding-bottom: 10px" data-scroll-reveal>
-            <h2>Tischrätsel Freunde</h2>
+            <h2>Deine Tischnummer</h2>
             <p><span></span><i class="fa fa-question"></i><span></span></p>
         </div>
     </div>
 </section>
 
-<table style="margin:0px; max-width: 400px; margin: auto">
-    <tbody>
-    <tr>
-        <td colspan="2" style="text-align: center;">Ich zeige Dir Deinen Platz.</td>
-    </tr>
-    <tr>
-        <td colspan="2" style="text-align: center;">&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-align: center;" width="50%">
-            Jörn<br />
-            Martina<br />
-            Bianca<br />
-            Tina
-        <td style="text-align: center;" width="50%">
-            Silke<br />
-            Janina & Sven<br />
-            Janine & Fabian
-        </td>
-    </tr>
-    </tbody>
-</table>
-<p style="margin-top: 20px; text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
+<p style="text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
     Ich bin eine zweistellige Zahl.<br />
     Meine Zehnerstelle ist doppelt so groß wie meine Einerstelle.<br />
     Die Summe meiner Ziffern beträgt 12.
