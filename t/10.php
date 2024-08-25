@@ -1,5 +1,7 @@
 <?php require_once('./head.php'); ?>
-
+<script type="text/javascript">
+    let correctSolution = 11;
+</script>
 <div class="popupcover" id="popupcover" onClick="closeAll()"></div>
 <div class="popup" id="hint">
     <h2>Hinweis</h2>
@@ -10,13 +12,13 @@
 <div class="popup" id="guess">
     <h2>Deine Lösung prüfen</h2>
     <p>Gib Deine Lösung ein</p>
-    <input id="guessText" onKeyUp="resetGuessResult() "/>
+    <input id="guessText" onKeyUp="checkEnter()" onFocus="this.select()" inputMode="numeric"/>
     <div id="guessCorrect">
         <p>Das ist korrekt! Gratulation.</p>
         <p><strong>Genieß die Party an, um oder auf Tisch 11.</strong></p>
     </div>
     <p id="guessWrong">Das ist leider noch nicht korrekt. Checke noch mal den Hinweis und rechne nach.</p>
-    <input type="button" value="OK" onclick="checkSolution(11)" />
+    <input type="button" value="OK" onclick="checkSolution()" />
 </div>
 
 <div class="popup" id="tell">

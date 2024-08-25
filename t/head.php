@@ -846,14 +846,15 @@
             togglePopup('guess', 'none');
         }
 
-        function checkEnter(){
+        function checkEnter() {
             console.log(event);
-            if (event.key === 'Enter') {
+            if (event.key === 'Enter' || event.keyCode === 13) {
                 event.preventDefault();
                 checkSolution();
-            }
-            if (event.key === 'Esc') {
+            } else if (event.key === 'Esc') {
                 closeAll();
+            } else {
+                resetGuessResult();
             }
         }
     </script>

@@ -1,5 +1,7 @@
 <?php require_once('./head.php'); ?>
-
+<script type="text/javascript">
+    let correctSolution = 49;
+</script>
 <div class="popupcover" id="popupcover" onClick="closeAll()"></div>
 <div class="popup" id="hint">
     <h2>Hinweis</h2>
@@ -10,18 +12,18 @@
 <div class="popup" id="guess">
     <h2>Deine Lösung prüfen</h2>
     <p>Gib Deine Lösung ein</p>
-    <input id="guessText" onKeyUp="resetGuessResult() "/>
+    <input id="guessText" onKeyUp="checkEnter()" onFocus="this.select()" inputMode="numeric"/>
     <div id="guessCorrect">
         <p>Das ist korrekt! Gratulation.</p>
         <p><strong>Genieß die Party an, um oder auf Tisch 49.</strong></p>
     </div>
     <p id="guessWrong">Das ist leider noch nicht korrekt. Checke noch mal den Hinweis und rechne nach.</p>
-    <input type="button" value="OK" onclick="checkSolution(49)" />
+    <input type="button" value="OK" onclick="checkSolution()" />
 </div>
 
 <div class="popup" id="tell">
     <h2>Die korrekte Lösung</h2>
-    <p>Der einzige Weg raus führt zur 49. Das ist auch der einzige Tisch im Raum der auf 9 endet.</p>
+    <p>Der einzige Weg raus führt zur 49. Das ist auch der einzige Tisch im Raum dessen Nummer auf 9 endet.</p>
     <p><strong>Deine Tischnummer ist die 49.</strong></p>
     <input type="button" value="OK" onclick="togglePopup('tell', 'none')" />
 </div>

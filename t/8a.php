@@ -1,22 +1,24 @@
 <?php require_once('./head.php'); ?>
-
+<script type="text/javascript">
+    let correctSolution = 45;
+</script>
 <div class="popupcover" id="popupcover" onClick="closeAll()"></div>
 <div class="popup" id="hint">
     <h2>Hinweis</h2>
-    <p>Frage einen der Coder, die können<br />Dir helfen. Die laufen hier <br />bestimmt irgendwo rum.<br />(Oder zieh halt ein Ticket.)</p>
+    <p>Frage einen der Coder, die können<br />Dir helfen. Die laufen hier <br />bestimmt irgendwo rum.<br /><br />(Oder zieh halt ein Ticket.)</p>
     <input type="button" value="OK" onclick="togglePopup('hint', 'none')" />
 </div>
 
 <div class="popup" id="guess">
     <h2>Deine Lösung prüfen</h2>
     <p>Gib Deine Lösung ein</p>
-    <input id="guessText" onKeyUp="resetGuessResult() "/>
+    <input id="guessText" onKeyUp="checkEnter()" onFocus="this.select()" inputMode="numeric"/>
     <div id="guessCorrect">
         <p>Das ist korrekt! Gratulation.</p>
         <p><strong>Genieß die Party an, um oder auf Tisch 45.</strong></p>
     </div>
     <p id="guessWrong">Das ist leider noch nicht korrekt. Checke noch mal den Hinweis und rechne nach.</p>
-    <input type="button" value="OK" onclick="checkSolution(45)" />
+    <input type="button" value="OK" onclick="checkSolution()" />
 </div>
 
 <div class="popup" id="tell">
@@ -37,10 +39,15 @@
 </section>
 
 <p style="text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
-    Was gibt folgende Code-Zeile aus?<br />
-    <pre style="width:510px; margin: auto">$x = 'C' . 'O';
-dd(DB::select("SELECT id FROM campus WHERE code = '{$x}L'")[0]->id);</pre>
-<!--    <span style="font-family: Courier; font-weight: 200">dd(DB::select("SELECT id FROM campus WHERE code = 'COL'")[0]->id);</span>-->
+    Was gibt folgendes PHP-Code-Snippet aus?
+</p>
+
+<pre style="width:95%; margin: auto">$x = 'C' . 'O';
+dd(DB::select("SELECT id FROM campus
+    WHERE code = '{$x}L'")[0]->id);</pre>
+
+<p style="text-align:center">Das Ergebnis ist Deine Tischnummer.</p>
+
 </p>
 <form class="knopf-container" style="text-align:center">
     <button type="button" onclick="togglePopup('hint', 'block')">Hinweis</button><br/>

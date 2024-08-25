@@ -12,7 +12,7 @@
 <div class="popup" id="guess">
     <h2>Deine Lösung prüfen</h2>
     <p>Gib Deine Lösung ein</p>
-    <input id="guessText" onKeyUp="checkEnter()" onFocus="this.select()"/>
+    <input id="guessText" onKeyUp="checkEnter()" onFocus="this.select()" inputMode="numeric"/>
     <div id="guessCorrect">
         <p>Das ist korrekt! Gratulation.</p>
         <p><strong>Genieß die Party an, um oder auf Tisch 15.</strong></p>
@@ -38,8 +38,9 @@
 </section>
 
 <p style="text-align:center"><strong>So findest Du Deine Tischnummer:</strong><br/>
-    Seit wie vielen Tagen sind Nicole und Burkhart heute bereits standesamtlich verheiratet?<br/>Berechne von
-    dieser Zahl die Quersumme (die Summe aller einzelnen Ziffern) und Du hast Deine Tischnummer.
+    Seit wie vielen Tagen sind Nicole und Burkhart<br />
+    heute bereits standesamtlich verheiratet?<br/><br />
+    Berechne von dieser Zahl die Quersumme<br />(die Summe aller einzelnen Ziffern)<br /> und Du hast Deine Tischnummer.
 </p>
 <form class="knopf-container" style="text-align:center">
     <button type="button" onclick="togglePopup('hint', 'block')">Hinweis</button><br/>
